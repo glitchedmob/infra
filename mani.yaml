@@ -124,6 +124,19 @@ tasks:
         echo "skip: current branch is '$branch'"
       fi
 
+  if-changed:
+    desc: Run a command only when repo has local changes
+    cmd: |
+      if [ -z "$run" ]; then
+        echo "error: pass run='<command>'"
+        exit 1
+      fi
+      if [ -n "$(git status --porcelain)" ]; then
+        eval "$run"
+      else
+        echo "skip: clean"
+      fi
+
   tf-fmt-check:
     desc: Check Terraform formatting
     target: tf
