@@ -129,6 +129,11 @@ tasks:
     target: tf
     cmd: make tf-lint
 
+  ansible-install:
+    desc: Install ansible and dependencies where configured
+    target: ansible
+    cmd: make ansible-install
+
   ansible-lint:
     desc: Run ansible-lint where configured
     target: ansible
