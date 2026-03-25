@@ -1,0 +1,135 @@
+projects:
+  lz-aws-core:
+    path: lz/infra-aws-core
+    url: git@github.com:glitchedmob/infra-aws-core.git
+    tags: [lz, tf, aws, core]
+
+  lz-dns:
+    path: lz/infra-dns
+    url: git@github.com:glitchedmob/infra-dns.git
+    tags: [lz, tf, dns]
+
+  lz-gha:
+    path: lz/infra-gha
+    url: git@github.com:glitchedmob/infra-gha.git
+    tags: [lz, tf, ansible, gha]
+
+  lz-headscale:
+    path: lz/infra-headscale
+    url: git@github.com:glitchedmob/infra-headscale.git
+    tags: [lz, tf, headscale]
+
+  lz-k8s-apps:
+    path: lz/infra-k8s-apps
+    url: git@github.com:glitchedmob/infra-k8s-apps.git
+    tags: [lz, k8s, apps]
+
+  lz-on-prem:
+    path: lz/infra-on-prem
+    url: git@github.com:glitchedmob/infra-on-prem.git
+    tags: [lz, tf, ansible, onprem]
+
+  lz-public-edge:
+    path: lz/infra-public-edge
+    url: git@github.com:glitchedmob/infra-public-edge.git
+    tags: [lz, tf, ansible, k8s, edge]
+
+  lz-shared:
+    path: lz/infra-shared
+    url: git@github.com:glitchedmob/infra-shared.git
+    tags: [lz, tf, shared]
+
+  lz-vm-workloads:
+    path: lz/infra-vm-workloads
+    url: git@github.com:glitchedmob/infra-vm-workloads.git
+    tags: [lz, tf, ansible, k8s, vm]
+
+  sgfdevs-aws-core:
+    path: sgfdevs/infra-aws-core
+    url: git@github.com:sgfdevs/infra-aws-core.git
+    tags: [sgfdevs, tf, aws, core]
+
+  sgfdevs-dns:
+    path: sgfdevs/infra-dns
+    url: git@github.com:sgfdevs/infra-dns.git
+    tags: [sgfdevs, tf, dns]
+
+  sgfdevs-k8s-apps:
+    path: sgfdevs/infra-k8s-apps
+    url: git@github.com:sgfdevs/infra-k8s-apps.git
+    tags: [sgfdevs, k8s, apps]
+
+  sgfdevs-vm-workloads:
+    path: sgfdevs/infra-vm-workloads
+    url: git@github.com:sgfdevs/infra-vm-workloads.git
+    tags: [sgfdevs, tf, ansible, k8s, vm]
+
+targets:
+  default:
+    all: true
+
+  lz:
+    tags: [lz]
+
+  sgfdevs:
+    tags: [sgfdevs]
+
+  tf:
+    tags: [tf]
+
+  ansible:
+    tags: [ansible]
+
+  k8s:
+    tags: [k8s]
+
+  lz-tf:
+    tags_expr: lz && tf
+
+  lz-ansible:
+    tags_expr: lz && ansible
+
+  lz-k8s:
+    tags_expr: lz && k8s
+
+  sgfdevs-tf:
+    tags_expr: sgfdevs && tf
+
+  sgfdevs-ansible:
+    tags_expr: sgfdevs && ansible
+
+  sgfdevs-k8s:
+    tags_expr: sgfdevs && k8s
+
+tasks:
+  git-status:
+    desc: Show concise git status
+    cmd: git status -sb
+
+  git-branch:
+    desc: Show active branch
+    cmd: git rev-parse --abbrev-ref HEAD
+
+  git-fetch:
+    desc: Fetch all remotes and prune
+    cmd: git fetch --all --prune
+
+  git-pull-main:
+    desc: Fast-forward pull if on main branch
+    cmd: |
+      branch=$(git rev-parse --abbrev-ref HEAD)
+      if [ "$branch" = "main" ]; then
+        git pull --ff-only
+      else
+        echo "skip: current branch is '$branch'"
+      fi
+
+  tf-fmt-check:
+    desc: Check Terraform formatting
+    target: tf
+    cmd: make tf-lint
+
+  ansible-lint:
+    desc: Run ansible-lint where configured
+    target: ansible
+    cmd: make ansible-lint

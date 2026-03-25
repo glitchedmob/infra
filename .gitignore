@@ -1,0 +1,17 @@
+# mani #
+sgfdevs/infra-vm-workloads
+sgfdevs/infra-k8s-apps
+sgfdevs/infra-dns
+sgfdevs/infra-aws-core
+lz/infra-vm-workloads
+lz/infra-shared
+lz/infra-public-edge
+lz/infra-on-prem
+lz/infra-k8s-apps
+lz/infra-headscale
+lz/infra-gha
+lz/infra-dns
+lz/infra-aws-core
+# mani #
+
+.idea/
