@@ -8,7 +8,7 @@ lz/infra-shared
 lz/infra-public-edge
 lz/infra-on-prem
 lz/infra-k8s-apps
-lz/infra-headscale
+lz/infra-app-config
 lz/infra-gha
 lz/infra-dns
 lz/infra-aws-core

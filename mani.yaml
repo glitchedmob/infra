@@ -14,10 +14,10 @@ projects:
     url: git@github.com:glitchedmob/infra-gha.git
     tags: [lz, tf, ansible, gha]
 
-  lz-headscale:
-    path: lz/infra-headscale
-    url: git@github.com:glitchedmob/infra-headscale.git
-    tags: [lz, tf, headscale]
+  lz-app-config:
+    path: lz/infra-app-config
+    url: git@github.com:glitchedmob/infra-app-config.git
+    tags: [lz, tf, app-config]
 
   lz-k8s-apps:
     path: lz/infra-k8s-apps

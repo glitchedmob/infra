@@ -11,7 +11,7 @@ Meta repo management is handled by [mani](https://manicli.com/) which is a tool 
 - [`lz/infra-aws-core`](https://github.com/glitchedmob/infra-aws-core): Provisions LZ's shared AWS foundation, including Terraform/OpenTofu state backend, GitHub OIDC CI access, and baseline IAM Identity Center access controls.
 - [`lz/infra-dns`](https://github.com/glitchedmob/infra-dns): Manages DNS records for the `levizitting.com` domain as code with OpenTofu and CI plan/apply workflows.
 - [`lz/infra-gha`](https://github.com/glitchedmob/infra-gha): Provides reusable GitHub Actions workflows and composite actions used by infra repos for Terraform/OpenTofu and Ansible automation.
-- [`lz/infra-headscale`](https://github.com/glitchedmob/infra-headscale): Defines Headscale (the VPN solution) users, ACL policy, and pre-auth key lifecycle, with generated credentials stored in AWS SSM Parameter Store.
+- [`lz/infra-app-config`](https://github.com/glitchedmob/infra-app-config): Manages post-bootstrap configuration for LZ edge-hosted applications, currently Headscale users, ACL policy, and pre-auth key lifecycle with credentials stored in AWS SSM Parameter Store.
 - [`lz/infra-k8s-apps`](https://github.com/glitchedmob/infra-k8s-apps): Holds the Kubernetes manifests for base infrastructure and applications deployed to the LZ k3s cluster.
 - [`lz/infra-on-prem`](https://github.com/glitchedmob/infra-on-prem): Operates on-prem networking and virtualization hosts (MikroTik + Proxmox) with OpenTofu plus Ansible host lifecycle automation.
 - [`lz/infra-public-edge`](https://github.com/glitchedmob/infra-public-edge): Provisions and operates the LZ public edge node, including the Kubernetes resources for edge routing and edge-hosted services.
