@@ -20,6 +20,7 @@ Meta repo management is handled by [mani](https://manicli.com/) which is a tool 
 
 ### SGF Devs
 
+- [`sgfdevs/infra-app-config`](https://github.com/sgfdevs/infra-app-config): Manages post-bootstrap OpenBao OIDC and backup authentication configuration.
 - [`sgfdevs/infra-aws-core`](https://github.com/sgfdevs/infra-aws-core): Provisions SGF Devs shared AWS core primitives such as remote state backend, CI OIDC IAM role, and account access baseline.
 - [`sgfdevs/infra-dns`](https://github.com/sgfdevs/infra-dns): Manages Cloudflare DNS records for the `sgf.dev` zone as code with OpenTofu and CI validation/apply flows.
 - [`sgfdevs/infra-k8s-apps`](https://github.com/sgfdevs/infra-k8s-apps): Holds the Kubernetes manifests for base infrastructure and applications deployed to the SGF Devs k3s cluster.

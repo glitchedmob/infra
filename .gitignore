@@ -1,4 +1,5 @@
 # mani #
+sgfdevs/infra-app-config
 sgfdevs/infra-vm-workloads
 sgfdevs/infra-k8s-apps
 sgfdevs/infra-dns
