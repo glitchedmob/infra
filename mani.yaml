@@ -69,6 +69,16 @@ projects:
     url: git@github.com:sgfdevs/infra-vm-workloads.git
     tags: [sgfdevs, tf, ansible, k8s, vm]
 
+  opensgf-aws-core:
+    path: opensgf/infra-aws-core
+    url: git@github.com:Open-SGF/infra-aws-core.git
+    tags: [opensgf, tf, aws, core]
+
+  opensgf-dns:
+    path: opensgf/infra-dns
+    url: git@github.com:Open-SGF/infra-dns.git
+    tags: [opensgf, tf, dns]
+
 targets:
   default:
     all: true
@@ -78,6 +88,9 @@ targets:
 
   sgfdevs:
     tags: [sgfdevs]
+
+  opensgf:
+    tags: [opensgf]
 
   tf:
     tags: [tf]
@@ -105,6 +118,9 @@ targets:
 
   sgfdevs-k8s:
     tags_expr: sgfdevs && k8s
+
+  opensgf-tf:
+    tags_expr: opensgf && tf
 
 tasks:
   git-status:

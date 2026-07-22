@@ -1,7 +1,7 @@
 # Infra
 
 This repository is a "meta" repo that manages multiple repos at once.
-Specifically this repo is for managing physical and logical infrastructure for Levi Zitting and SGF Devs.
+Specifically this repo manages physical and logical infrastructure for Levi Zitting, SGF Devs, and Open SGF.
 Meta repo management is handled by [mani](https://manicli.com/) which is a tool that makes it easy to run commands across repos.
 
 ## Sub-repositories
@@ -25,6 +25,11 @@ Meta repo management is handled by [mani](https://manicli.com/) which is a tool 
 - [`sgfdevs/infra-dns`](https://github.com/sgfdevs/infra-dns): Manages Cloudflare DNS records for the `sgf.dev` zone as code with OpenTofu and CI validation/apply flows.
 - [`sgfdevs/infra-k8s-apps`](https://github.com/sgfdevs/infra-k8s-apps): Holds the Kubernetes manifests for base infrastructure and applications deployed to the SGF Devs k3s cluster.
 - [`sgfdevs/infra-vm-workloads`](https://github.com/sgfdevs/infra-vm-workloads): Provisions SGF Devs workload VMs on Proxmox and performs K3s + Flux bootstrap and configuration through Ansible.
+
+### Open SGF
+
+- [`opensgf/infra-aws-core`](https://github.com/Open-SGF/infra-aws-core): Provisions Open SGF shared AWS core primitives such as the remote state backend, CI OIDC IAM role, and account access baseline.
+- [`opensgf/infra-dns`](https://github.com/Open-SGF/infra-dns): Manages Cloudflare DNS records for the `opensgf.org` zone as code with OpenTofu and CI validation/apply flows.
 
 ## Common meta-repo commands
 

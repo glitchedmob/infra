@@ -1,4 +1,6 @@
 # mani #
+opensgf/infra-dns
+opensgf/infra-aws-core
 sgfdevs/infra-vm-workloads
 sgfdevs/infra-k8s-apps
 sgfdevs/infra-dns

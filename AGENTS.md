@@ -5,7 +5,7 @@ Minimal operator guide for this meta repo. Keep actions safe, fast, and scoped.
 ## What This Repo Is
 - This directory is a `mani` control repo for multiple sibling git repos.
 - Project inventory and automation entrypoints live in `mani.yaml`.
-- Main groups: `lz/*` and `sgfdevs/*`.
+- Main groups: `lz/*`, `sgfdevs/*`, and `opensgf/*`.
 
 ## Core Mani Commands
 - Validate config: `mani check`
@@ -15,9 +15,9 @@ Minimal operator guide for this meta repo. Keep actions safe, fast, and scoped.
 - Sync clone status: `mani sync --status`
 
 ## Targets You Should Use
-- Org: `lz`, `sgfdevs`
+- Org: `lz`, `sgfdevs`, `opensgf`
 - Stack: `tf`, `ansible`, `k8s`
-- Combined: `lz-tf`, `lz-ansible`, `lz-k8s`, `sgfdevs-tf`, `sgfdevs-ansible`, `sgfdevs-k8s`
+- Combined: `lz-tf`, `lz-ansible`, `lz-k8s`, `sgfdevs-tf`, `sgfdevs-ansible`, `sgfdevs-k8s`, `opensgf-tf`
 - Boolean: `tf-or-ansible`, `mixed-stacks`
 
 ## Built-in Mani Tasks
