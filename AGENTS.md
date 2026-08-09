@@ -18,15 +18,16 @@ Minimal operator guide for this meta repo. Keep actions safe, fast, and scoped.
 - Org: `lz`, `sgfdevs`, `opensgf`
 - Stack: `tf`, `ansible`, `k8s`
 - Combined: `lz-tf`, `lz-ansible`, `lz-k8s`, `sgfdevs-tf`, `sgfdevs-ansible`, `sgfdevs-k8s`, `opensgf-tf`
-- Boolean: `tf-or-ansible`, `mixed-stacks`
 
 ## Built-in Mani Tasks
 - `git-status` -> `git status -sb`
 - `git-branch` -> current branch
 - `git-fetch` -> fetch/prune remotes
 - `git-pull-main` -> ff-only pull when branch is `main`
-- `tf-fmt-check` -> `terraform fmt -check -recursive` (tf-tagged repos)
-- `ansible-lint` -> `ansible-lint || true` (ansible-tagged repos)
+- `if-changed` -> run the supplied `run='<command>'` only in dirty repos
+- `tf-fmt-check` -> `make tf-lint` (tf-tagged repos)
+- `ansible-install` -> `make ansible-install` (ansible-tagged repos)
+- `ansible-lint` -> `make ansible-lint` (ansible-tagged repos)
 
 ## Makefile Conventions (Inside Child Repos)
 - Start with: `make help`
