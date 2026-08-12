@@ -4,6 +4,7 @@ opensgf/infra-aws-core
 sgfdevs/infra-vm-workloads
 sgfdevs/infra-k8s-apps
 sgfdevs/infra-dns
+sgfdevs/infra-gh
 sgfdevs/infra-app-config
 sgfdevs/infra-aws-core
 lz/infra-vm-workloads

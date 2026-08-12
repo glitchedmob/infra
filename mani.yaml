@@ -59,6 +59,11 @@ projects:
     url: git@github.com:sgfdevs/infra-dns.git
     tags: [sgfdevs, tf, dns]
 
+  sgfdevs-gh:
+    path: sgfdevs/infra-gh
+    url: git@github.com:sgfdevs/infra-gh.git
+    tags: [sgfdevs, tf, github]
+
   sgfdevs-k8s-apps:
     path: sgfdevs/infra-k8s-apps
     url: git@github.com:sgfdevs/infra-k8s-apps.git
