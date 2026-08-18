@@ -31,6 +31,7 @@ Meta repo management is handled by [mani](https://manicli.com/) which is a tool 
 
 - [`opensgf/infra-aws-core`](https://github.com/Open-SGF/infra-aws-core): Provisions Open SGF shared AWS core primitives such as the remote state backend, CI OIDC IAM role, and account access baseline.
 - [`opensgf/infra-dns`](https://github.com/Open-SGF/infra-dns): Manages Cloudflare DNS records for the `opensgf.org` zone as code with OpenTofu and CI validation/apply flows.
+- [`opensgf/infra-gh`](https://github.com/Open-SGF/infra-gh): Manages OpenSGF GitHub organization teams, repository access, and repository governance as code with OpenTofu.
 
 ## Common meta-repo commands
 

@@ -84,6 +84,11 @@ projects:
     url: git@github.com:Open-SGF/infra-dns.git
     tags: [opensgf, tf, dns]
 
+  opensgf-gh:
+    path: opensgf/infra-gh
+    url: git@github.com:Open-SGF/infra-gh.git
+    tags: [opensgf, tf, github]
+
 targets:
   default:
     all: true
