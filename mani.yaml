@@ -54,6 +54,11 @@ projects:
     url: git@github.com:sgfdevs/infra-app-config.git
     tags: [sgfdevs, tf, app-config]
 
+  sgfdevs-iam:
+    path: sgfdevs/infra-iam
+    url: git@github.com:sgfdevs/infra-iam.git
+    tags: [sgfdevs, tf, iam]
+
   sgfdevs-dns:
     path: sgfdevs/infra-dns
     url: git@github.com:sgfdevs/infra-dns.git
