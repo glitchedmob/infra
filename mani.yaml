@@ -34,6 +34,11 @@ projects:
     url: git@github.com:glitchedmob/infra-public-edge.git
     tags: [lz, tf, ansible, k8s, edge]
 
+  lz-restic-backup:
+    path: lz/restic-backup
+    url: git@github.com:glitchedmob/restic-backup.git
+    tags: [lz, docker, backups]
+
   lz-shared:
     path: lz/infra-shared
     url: git@github.com:glitchedmob/infra-shared.git

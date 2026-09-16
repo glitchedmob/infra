@@ -12,6 +12,7 @@ sgfdevs/infra-aws-core
 lz/infra-vm-workloads
 lz/infra-shared
 lz/infra-public-edge
+lz/restic-backup
 lz/infra-on-prem
 lz/infra-k8s-apps
 lz/infra-app-config
