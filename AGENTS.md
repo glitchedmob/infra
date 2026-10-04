@@ -58,3 +58,5 @@ Minimal operator guide for this meta repo. Keep actions safe, fast, and scoped.
 ## Notes
 - Some repos pin `uv` versions in `src/ansible/pyproject.toml`.
 - If tooling errors mention version constraints, check those files first.
+- Do not write tests unless the user asks for them
+- Do not write documentation unless it's to fix broken documentation or if the users asks for it
