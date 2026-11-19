@@ -54,6 +54,11 @@ projects:
     url: git@github.com:sgfdevs/infra-aws-core.git
     tags: [sgfdevs, tf, aws, core]
 
+  sgfdevs-gcp-core:
+    path: sgfdevs/infra-gcp-core
+    url: git@github.com:sgfdevs/infra-gcp-core.git
+    tags: [sgfdevs, tf, gcp, core]
+
   sgfdevs-app-config:
     path: sgfdevs/infra-app-config
     url: git@github.com:sgfdevs/infra-app-config.git

@@ -9,6 +9,7 @@ sgfdevs/infra-dns
 sgfdevs/infra-iam
 sgfdevs/infra-app-config
 sgfdevs/infra-aws-core
+sgfdevs/infra-gcp-core
 lz/infra-vm-workloads
 lz/infra-shared
 lz/restic-backup
